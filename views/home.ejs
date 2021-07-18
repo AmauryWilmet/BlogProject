@@ -1,0 +1,12 @@
+
+<%- include("partials/header"); -%>
+    <h1>Home</h1>
+
+    <% for (let i = 0; i < listPosts.length; i++) { %>
+      <h1><%= listPosts[i].title %></h1>
+      <% if (listPosts[i].content.length > 20) { %>
+        
+      <% } %>
+      <p><%= listPosts[i].content %></p>
+    <% } %>
+<%- include("partials/footer"); -%>
